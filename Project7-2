@@ -1,0 +1,24 @@
+Madison Fleitas
+CS 250 – Software Development Lifecycle
+Summary:
+During the development of the customer's mobile application, my primary focus was on implementing unit tests for critical components, including contact, task, and appointment services. To ensure the efficacy of the tests, a dual strategy of black-box and white-box testing was employed. Black box testing involved the systematic input of data to validate the production of correct outputs, while white box testing delved into the code, ensuring its logical soundness. The use of JUnit test cases, particularly for edge cases, contributed significantly to achieving an impressive code coverage of 99.7%, thereby confirming the overall effectiveness and efficiency of the implemented code.
+
+Experience Writing JUnit Tests:
+My experience with crafting JUnit tests was notably positive. This phase facilitated the assurance of technical soundness by rigorously validating the logic and confirming the expected outputs. The pursuit of efficiency involved employing various methods, such as code refactoring and the removal of redundant sections. Additionally, the strategic utilization of JUnit assertions played a pivotal role in consistently verifying that the expected results were met.
+
+Reflection Report:
+
+Software Testing Techniques Employed:
+The testing strategy encompassed both black box and white box testing methodologies, effectively ensuring a comprehensive evaluation. The incorporation of JUnit test cases, specifically designed to scrutinize edge cases and identify potential errors, contributed significantly to the robustness of the verification process. This multifaceted approach facilitated not only the confirmation of code correctness and efficiency but also the discovery of hidden errors and critical edge cases.
+
+Software Testing Techniques Not Used:
+While the applied techniques provided a robust evaluation, it is crucial to acknowledge the omission of performance testing and security testing from the project scope. Performance testing, focused on measuring system speed, scalability, and responsiveness, was not applied. Similarly, security testing, aimed at identifying and mitigating potential security risks, was also omitted. The implication of neglecting these techniques is the potential oversight of errors and security vulnerabilities that might have been identified with their application.
+
+Practical Use and Implications:
+The practical application of the employed software testing techniques was instrumental in verifying code correctness, ensuring efficiency, and identifying errors and edge cases. The consequences of not applying certain techniques, such as performance and security testing, extend to the possibility of undetected errors and security vulnerabilities. A comprehensive testing strategy is essential to mitigate these risks and ensure the robustness of the developed software.
+
+Mindset and Bias in Code Review:
+Throughout the project, a cautious mindset was adopted, acknowledging the intricacies inherent in the code. To minimize bias in code reviews, a meticulous approach was employed, leveraging both automated unit tests and thorough manual examinations. Maintaining a heightened awareness of potential bias during the review process is crucial for accurate assessments of code quality and functionality.
+
+Discipline in Commitment to Quality:
+A disciplined commitment to quality was upheld throughout the development process, emphasizing the importance of avoiding technical debt. Code reviews and unit tests were employed as integral components of this discipline, ensuring a comprehensive examination of the codebase and prioritizing error-free implementation over expedient solutions. This disciplined approach serves as a safeguard against shortcuts that may compromise the overall quality of the code.
