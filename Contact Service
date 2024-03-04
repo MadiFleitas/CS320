@@ -1,0 +1,106 @@
+package contactService;
+import java.util.ArrayList;
+
+public class ContactService {
+	private ArrayList<Contact> Contacts;
+
+	// Default constructor
+
+	public ContactService() {
+
+	Contacts = new ArrayList<>();
+
+	}
+
+	public boolean addContact(Contact contact){
+
+	boolean isPresent= false;
+
+	for (Contact contactList:Contacts) {
+
+	if (contactList.equals(contact)) {
+
+	isPresent = true;
+
+	}
+
+	}
+
+
+	if (!isPresent) {
+
+	Contacts.add(contact);
+
+	return true;
+
+	}
+
+	else {
+
+	return false;
+
+	}
+
+	}
+
+	// Delete the contact with the given contactId if the contact is present in our list.
+
+	public boolean deleteContact(String contactID) {
+
+	for (Contact contactList:Contacts) {
+
+	if (contactList.getContactID().equals(contactID)) {
+
+	Contacts.remove(contactList);
+
+	return true;
+
+	}
+
+	}
+
+	return false;
+
+	}
+
+	public boolean updateContact(String contactID, String firstName, String lastName, String phoneNumber, String address) {
+
+	for (Contact contactList:Contacts) {
+
+	if (contactList.getContactID().equals(contactID)) {
+
+	if(!firstName.equals("") && !(firstName.length()>10)) {
+
+	contactList.setFirstName(firstName);
+
+	}
+
+	if(!lastName.equals("") && !(lastName.length()>10)) {
+
+	contactList.setFirstName(lastName);
+
+	}
+
+	if(!phoneNumber.equals("") && (phoneNumber.length()==10)) {
+
+	contactList.setFirstName(phoneNumber);
+
+	}
+
+	if(!address.equals("") && !(address.length()>30)) {
+
+	contactList.setFirstName(address);
+
+	}
+
+	return true;
+
+	}
+
+	}
+
+	return false;
+
+	}
+
+}
