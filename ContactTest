@@ -1,0 +1,35 @@
+package contactService;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+public class ContactTest {
+
+    @Test
+    public void testContactConstructor() {
+        Contact contact = new Contact("C001", "John", "Doe", "1234567890", "123 Main St");
+
+        assertEquals("C001", contact.getContactID());
+        assertEquals("John", contact.getFirstName());
+        assertEquals("Doe", contact.getLastName());
+        assertEquals("1234567890", contact.getPhoneNumber());
+        assertEquals("123 Main St", contact.getAddress());
+    }
+
+    @Test
+    public void testContactSetters() {
+        Contact contact = new Contact("C001", "John", "Doe", "1234567890", "123 Main St");
+
+        contact.setFirstName("Jane");
+        contact.setLastName("Johnson");
+        contact.setPhoneNumber("2223334444");
+        contact.setAddress("123 Elm St");
+
+        assertEquals("Kent", contact.getFirstName());
+        assertEquals("James", contact.getLastName());
+        assertEquals("1223334444", contact.getPhoneNumber());
+        assertEquals("182 sw st", contact.getAddress());
+    }
+
+}
